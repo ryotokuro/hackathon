@@ -1,0 +1,46 @@
+
+
+Ethan has just gotten his new smart pillbox from Kusuribako. So the first thing he wants to do is set it up.
+
+SAKSHAM: Alexa, set up my pillbox
+
+ask smart pillbox when do you need to take your medication?
+
+
+
+SAKSHAM: 10am, 3pm and 8pm
+
+ask smart pillbox daily reminder
+
+
+
+----------------
+Later at 10am, it's time for Ethan to take his pills. His pillbox lights up, and Alexa alerts him to take his medicine.
+
+*RED LIGHT UP on BOX*
+
+ask smart pillbox buzz alarm
+
+SAKSHAM: OH! time to take my medication! (forgot got distracted)
+
+
+Since Ethan has dementia, even though Alexa has reminded him to take his pills, Ethan forgets. So in another 15 minutes, Alexa reminds Ethan again.
+
+ask smart pillbox send prompt
+
+SAKSHAM: no *go for pills, and close box*
+
+*LIGHTS TURN OFF*
+
+
+
+Since Ethan has dementia, although he just took his pills, he has already forgotten. But thankfully, Ethan can just ask Alexa if he's taken his pills.
+
+
+
+SAKSHAM: Alexa, have i taken my pills?
+
+ask smart pillbox have i taken my pills
+
+
+

@@ -1,0 +1,34 @@
+import RPi.GPIO as GPIO
+import time
+from datetime import datetime
+
+from dateutil import tz
+
+# app will need to receive location data of pillbox so the user can 
+# config based on the timezone of the patient
+
+
+au_tz = tz.gettz'Australia/Sydney')au_dt = utc_dt.astimezone(au_tz)
+fmt = '%d-%m-%Y %H:%M:%S %Z%z'
+print(au_dt.strftime(fmt))
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+
+GPIO.setup(18, GPIO.OUT, initial = GPIO.HIGH)
+# GPIO.setup(?, GPIO.IN)
+
+# flag = False
+# while == 1:
+	# if change in GPIO (rising)
+	# if flag == TRUE:
+		# GPIO.output(18, GPIO.LOW)
+
+print("LED on")
+
+print(str(datetime.now()))
+
+time.sleep(2)
+
+print("LED off")
+GPIO.output(18, GPIO.LOW)

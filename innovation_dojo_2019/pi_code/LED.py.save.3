@@ -1,0 +1,35 @@
+import RPi.GPIO as GPIO
+import time
+
+# app needs to receive location data of pillbox so the pilltaking can be
+# configured based on the patients whereabouts
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+
+GPIO.setup(18, GPIO.OUT, initial = GPIO.HIGH)
+GPIO.setup(24, GPIO.IN)
+
+print(time.strftime('%d-%m-%Y %H:%M:%S'))
+
+circuit_broken = False
+
+current_t = time.strftime('%S')
+while True:
+	
+	print(time.strftime('%S'))
+		
+	(int(time.strftime('%S')) % 5) == 0:
+		print("LED on: 5 seconds reached")
+		circuit_broken = False
+		GPIO.output(18, GPIO.HIGH)		
+
+	print"INPUT:", GPIO.input(24)
+
+	if GPIO.input(24) == 0:
+		circuit_broken = True
+		GPIO.output(18, GPIO.LOW)
+
+	else:
+		circuit_broken = False
+		GPIO.output(18, GPIO.HIGH)
